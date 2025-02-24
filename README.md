@@ -1,31 +1,32 @@
 # AICTE_Edunet-foundation-Cyber_security-IBM-Stegnography_project
 
-Steganography Project: Hiding Secrets in Digital Images
-AICTE Edunet Foundation Cyber Security IBM Program
+This repository contains the code and resources for a Steganography project developed as part of the AICTE Edunet Foundation Cyber Security program, in collaboration with IBM.
 
-Introduction
-Steganography is the art and science of hiding information within digital media, such as images, without drawing suspicion. This project, developed as part of the AICTE Edunet Foundation Cyber Security IBM Program, demonstrates how to conceal and extract secret messages using steganography techniques. It is designed to be a beginner-friendly yet professional tool for students and enthusiasts interested in cybersecurity and data hiding.
+## Project Overview
 
-Key Features
-Text Hiding in Images: Conceal secret messages within digital images.
+This project focuses on implementing various Steganography techniques to hide secret messages within digital media (images, audio, or text). The goal is to understand the principles of Steganography, its applications in cyber security, and to develop practical skills in implementing these techniques.
 
-Message Extraction: Decode hidden messages from encoded images.
+## Key Features
 
-Multi-Format Support: Works with popular image formats like JPEG, PNG, and BMP.
+* **Image Steganography:**
+    * Implementation of Least Significant Bit (LSB) steganography.
+    * Ability to hide text messages within image pixel data.
+    * Functions for encoding and decoding hidden messages.
 
-User-Friendly Interface: Simple command-line tools for encoding and decoding.
+## Technologies Used
 
-Secure Encryption: Uses cryptographic techniques to protect hidden messages.
+* Python (primary programming language)
+* import cv2
+* import os
+* import tkinter as tk
+* from tkinter import filedialog
+  
+## Contributing
 
-Technologies Used
-This project leverages the following technologies:
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
-Python: Core programming language for implementation.
+## Acknowledgments
 
-OpenCV (cv2): For image processing and manipulation.
-
-NumPy: For efficient numerical operations on image data.
-
-Pillow (PIL): For handling and saving images in various formats.
-
-Cryptography Library: To encrypt and decrypt messages for added security.
+* AICTE
+* Edunet Foundation
+* IBM
