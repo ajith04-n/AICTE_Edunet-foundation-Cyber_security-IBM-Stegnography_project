@@ -1,71 +1,129 @@
-Steganography Project 🕵️‍♂️🔐
+# 🕵️‍♂️ Steganography – Hidden Message Encoder & Decoder
 
-This project demonstrates steganography, the art of hiding secret information inside an image. It allows you to encode a hidden message into an image and later decode it back using Java.
+**Steganography** is the art of concealing secret information within a non-secret file or image — a fascinating blend of creativity and cybersecurity.
+This project demonstrates a simple yet powerful **Java-based implementation** of steganography that allows you to **hide secret messages inside images** and later **retrieve them securely**.
 
-🚀 Features
+---
 
-Hide secret text messages inside an image.
+## 🚀 Features
 
-Retrieve the hidden message from the image.
+### 🔐 1. Message Encoding
 
-Simple Java implementation with two main files:
+* Embed secret text messages inside image files.
+* Password-protected encoding for enhanced security.
+* Supports `.jpg` and `.png` formats.
 
-encode.java – For embedding text into an image.
+### 🧩 2. Message Decoding
 
-decode.java – For extracting hidden text from the image.
+* Retrieve hidden messages from encoded images.
+* Password verification required for successful decryption.
+* Error handling for incorrect passwords or tampered images.
 
-Example image (mypic.jpg) provided for testing.
+### 💾 3. File Management
 
-Password-based security (password.txt).
+* Works with image and password files stored locally.
+* Generates new output images with embedded data.
 
-📂 Project Structure
-├── encode.java       # Java program to encode message into image
-├── decode.java       # Java program to decode hidden message
-├── mypic.jpg         # Sample image for testing
-├── password.txt      # Stores password for encoding/decoding
+### ⚙️ 4. Simple Java Implementation
+
+* Pure Java approach — no external libraries required.
+* Includes **two main classes**:
+
+  * `encode.java` → For embedding secret messages.
+  * `decode.java` → For extracting hidden text.
+
+---
+
+## 📂 Project Structure
+
+```
+├── encode.java       # Program to encode secret text into image
+├── decode.java       # Program to decode hidden message from image
+├── mypic.jpg         # Sample input image
+├── password.txt      # Stores password for encryption/decryption
 └── README.md         # Project documentation
+```
 
-⚙️ Requirements
+---
 
-Java 8 or later
+## 🧰 Technology Stack
 
-IDE or text editor (IntelliJ, Eclipse, VS Code, etc.)
+| Component    | Description                  |
+| ------------ | ---------------------------- |
+| **Language** | Java (JDK 8 or later)        |
+| **IDE**      | VS Code / Eclipse / IntelliJ |
+| **Platform** | Command Line / Terminal      |
+| **Security** | Password-based protection    |
 
-Command line or terminal access
+---
 
-🔧 Usage
-1. Compile the programs
+## 🛠️ Getting Started
+
+### ✅ Prerequisites
+
+Ensure you have the following installed before running the project:
+
+* Java 8 or higher
+* Text editor or IDE (Eclipse, IntelliJ, or VS Code)
+* Command-line terminal access
+
+---
+
+## 💡 Usage Guide
+
+### 1️⃣ Compile the Programs
+
+```bash
 javac encode.java
 javac decode.java
+```
 
-2. Encode a message
+### 2️⃣ Encode a Message
+
+```bash
 java encode mypic.jpg "YourSecretMessage" output.png
+```
 
+✅ This command hides your message in the image and generates `output.png`.
 
-This will create output.png containing the hidden message.
+### 3️⃣ Decode the Message
 
-3. Decode the message
+```bash
 java decode output.png
+```
 
+🔓 Displays the hidden message in your terminal after password verification.
 
-You will see the hidden message displayed in the terminal.
+---
 
-🔒 Security
+## 🔒 Security Measures
 
-A password (password.txt) is used to add an extra layer of security during encoding/decoding.
+* Uses **password-based authentication** stored in `password.txt`.
+* Prevents unauthorized decoding of sensitive messages.
+* Keep your password file safe for future access.
 
-Ensure that the password file is kept safe.
+---
 
-🎯 Applications
+## 🎯 Applications
 
-Secure message transmission
+* Secure communication over public channels
+* Digital watermarking
+* Copyright and intellectual property protection
+* Confidential data transmission
 
-Watermarking
+---
 
-Digital rights management
+## 🔮 Future Scope
 
-Protecting sensitive information
+* Support for audio and video steganography
+* GUI-based interface for user interaction
+* Encryption of messages before embedding
+* Cloud-based secure storage and retrieval
 
-👨‍💻 Author
+---
 
-Developed as part of AICTE Edunet Foundation Cyber Security - IBM Project.
+## 👨‍💻 Author
+
+Developed as part of the **AICTE Edunet Foundation Cyber Security - IBM Project**.
+
+> A practical demonstration of combining **security**, **creativity**, and **Java programming**.
